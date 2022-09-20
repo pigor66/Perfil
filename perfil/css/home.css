@@ -1,0 +1,54 @@
+body {
+    background-color: #000000;
+}
+
+.bg-darkness {
+    background-color: rgba(0, 0, 0, 0.959);
+    color: #a7a7a7;
+}
+.bg-darking {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #a7a7a7;
+}
+
+.cover-container {
+    max-width: 42em;
+}
+.project{
+    transition: 0.5s;
+}
+
+.project:hover{
+    box-shadow: 0px 0px 10px 5px rgb(112, 112, 112);
+    transition: 0.5s;
+}
+
+
+.higor {
+    border: 3px solid #000;
+    box-shadow: 0px 0px 10px 5px #000;
+}
+
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+
+.featurette-divider {
+    margin: 5rem 0;
+}
+
+.featurette-heading {
+    letter-spacing: -.05rem;
+}
+@media (max-width: 767px) {
+    .higor{
+        width: 20rem !important;
+    }
+}
