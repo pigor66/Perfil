@@ -2,6 +2,11 @@ body {
     background-color: #000000;
 }
 
+a h6{
+    text-decoration: underline;
+    color: #ffffff;
+}
+
 .bg-darkness {
     background-color: rgba(0, 0, 0, 0.95);
     color: #a7a7a7;
