@@ -1,0 +1,25 @@
+<div class="row h100 w-100 mx-0">
+  <div class="col-2 bg-primary d-flex flex-column align-items-center pt-3">
+    <img src="assets/img-user.jpeg" class="rounded-circle w-75 mb-1">
+    <h6 class="text-secondary">O que iremos atualizar?</h6>
+      <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        
+        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Geral</button>
+
+        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Detalhes</button>    
+        
+        <button class="nav-link" id="filters-tab" data-bs-toggle="pill" data-bs-target="#filters" type="button" role="tab" aria-controls="filters" aria-selected="false">Filtros</button>
+      </div>
+    </div>
+  <div class="col-10 bg-secondary pt-4">
+    <div class="tab-content" id="v-pills-tabContent">
+
+      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0"><app-cards></app-cards></div>
+
+
+      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0"><app-tables></app-tables></div>
+    
+    <div class="tab-pane fade" id="filters" role="tabpanel" aria-labelledby="filters-tab" tabindex="0"><app-filters></app-filters></div>
+  </div>
+  </div>
+</div>

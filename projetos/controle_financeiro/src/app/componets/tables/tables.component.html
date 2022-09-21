@@ -1,0 +1,168 @@
+<div class="d-flex justify-content-center">
+    <div class="modal fade" id="form" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">Preste atenção para
+                        preencher!!!</h5>
+                </div>
+                <div class="modal-body my-2">
+                    <div class="d-flex">
+                        <div class="w-50 mx-2">
+                            <label for="usuarios" class="form-label mb-0 mt-2">Usuário</label>
+                            <select class="form-select" id="usuarios" required name="usuario"
+                                [(ngModel)]="formData.usuario">
+                                <option value="Higor">Higor</option>
+                                <option value="Fernanda">Fernanda</option>
+                            </select>
+                        </div>
+                        <div class="w-50 mx-2">
+                            <label for="tipo" class="form-label mb-0 mt-2">Tipo</label>
+                            <select class="form-select" id="tipo" required name="tipo" [(ngModel)]="formData.tipo">
+                                <option value="Receita">Receita</option>
+                                <option value="Despesa">Despesa</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mx-2">
+                        <label class="form-label mb-0 mt-2">Valor</label>
+                        <input class="form-control" type="text" placeholder="Default input"
+                            aria-label="default input example" name="valor" [(ngModel)]="formData.valor">
+                    </div>
+                    <div class="d-flex">
+                        <div class="w-100 mx-2">
+                            <label for="origem" class="form-label mb-0 mt-2">Origem</label>
+                            <select class="form-select" id="origem" required name="origem"
+                                [(ngModel)]="formData.origem">
+                                <option value="-----------" selected>Nenhuma ação</option>
+                                <option value="Freela">Freela</option>
+                                <option value="Salário">Salário</option>
+                            </select>
+                        </div>
+                        <div class="w-100 mx-2">
+                            <label for="destino" class="form-label mb-0 mt-2">Destino</label>
+                            <select class="form-select" id="destino" required name="destino"
+                                [(ngModel)]="formData.destino">
+                                <option value="-----------" selected>Nenhuma ação</option>
+                                <option value="Água">Água</option>
+                                <option value="Aluguel">Aluguel</option>
+                                <option value="Cartão de credito nu">Cartão de credito nu</option>
+                                <option value="Cartão de credito inter">Cartão de credito inter</option>
+                                <option value="Celular">Celular</option>
+                                <option value="Cigarro">Cigarro</option>
+                                <option value="Compras">Compras</option>
+                                <option value="Emprestimo">Emprestimo</option>
+                                <option value="Luz">Luz</option>
+                                <option value="Não lembro">Não lembro</option>
+                                <option value="Passagem">Passagem</option>
+                                <option value="Pet">Pet</option>
+                                <option value="Porcaria do mês">Porcaria do mês</option>
+                                <option value="Streaming">Streaming</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="w-100 mx-2">
+                            <label for="mes" class="form-label mb-0 mt-2">Mês</label>
+                            <select class="form-select" id="mes" required name="mes" [(ngModel)]="formData.mes">
+                                <option value="Janeiro">Janeiro</option>
+                                <option value="Fevereiro">Fevereiro</option>
+                                <option value="Marco">Março</option>
+                                <option value="Abril">Abril</option>
+                                <option value="Maio">Maio</option>
+                                <option value="Junho">Junho</option>
+                                <option value="Julho">Julho</option>
+                                <option value="Agosto">Agosto</option>
+                                <option value="Setembro">Setembro</option>
+                                <option value="Outubro">Outubro</option>
+                                <option value="Novembro">Novembro</option>
+                                <option value="Dezembro">Dezembro</option>
+                            </select>
+                        </div>
+                        <div class="w-100 mx-2">
+                            <label for="ano" class="form-label mb-0 mt-2">Ano</label>
+                            <select class="form-select" id="ano" required name="ano" [(ngModel)]="formData.ano">
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mx-2">
+                        <label for="exampleFormControlTextarea1" class="form-label mb-0 mt-2">Observação</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" name="obs"
+                            [(ngModel)]="formData.obs" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-between">
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal"
+                        aria-label="Close">Cancelar</button>
+                    <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal" aria-label="Close"
+                        (click)="save()">Salvar</button>
+                    <!-- <button class="btn btn-outline-success"(click)="save()">Salvar</button> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="btn btn-outline-success py-0 px-2 rounded-circle mb-3" data-bs-toggle="modal" href="#form"
+        role="button">+</a>
+</div>
+<table class="table table-dark table-hover rounded-3">
+    <thead>
+        <tr class="text-center">
+            <th scope="col">Usuario</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Valor</th>
+            <th scope="col">Destino</th>
+            <th scope="col">Origem</th>
+            <th scope="col">Obs</th>
+            <th scope="col">Mês</th>
+            <th scope="col">Ano</th>
+            <th scope="col">Ação</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="text-center" *ngFor="let item of dataInfo">
+            <td>{{item.usuario}}</td>
+            <td>{{item.tipo}}</td>
+            <td>R$ {{item.valor}}</td>
+            <td>{{item.destino}}</td>
+            <td>{{item.origem}}</td>
+            <td>{{item.obs}}</td>
+            <td>{{item.mes}}</td>
+            <td>{{item.ano}}</td>
+            <td>
+                <div class="d-flex justify-content-center">
+                    <div class="modal fade" id="form" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+                        tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content text-dark">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalToggleLabel">Preste atenção para
+                                        preencher!!!</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <label for="">Usuario</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Open this select menu</option>
+                                        <option value="Higor">Higor</option>
+                                        <option value="Fernanda">Fernanda</option>
+                                    </select>
+                                </div>
+                                <div class="modal-footer d-flex justify-content-between">
+                                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal"
+                                        aria-label="Close">Cancelar</button>
+                                    <button class="btn btn-outline-success">Salvar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn btn-outline-warning btn-sm me-2" data-bs-toggle="modal" href="#form" role="button"
+                        (click)="editar(item)">Editar</a>
+                    <div class="btn btn-outline-danger btn-sm ms-2" (click)="delete(item.id)">Excluir</div>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
