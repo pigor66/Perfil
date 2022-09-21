@@ -18,12 +18,11 @@
 
     <nav class="navbar navbar-expand-lg bg-darkness fixed-top" aria-label="Twelfth navbar example">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10"
-                aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <div>Menu</div>
             </button>
-
-            <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+            <div class="collapse navbar-collapse justify-content-md-center" id="menu">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link text-light active" aria-current="page" href="#about">Quem sou</a>
@@ -54,7 +53,7 @@
                         <img src="./assets/higor.jpeg" class="rounded-circle my-5 higor efect">
                     </div>
 
-                    <div class="col-md-6 col-12 py-5">
+                    <div class="col-md-6 col-12 pb-4 py-md-5">
                         <h3 class="mb-4">Sou Higor</h3>
                         <p>Tenho 26 anos, atuo na àrea de front-end desde Setembro de 2021. Utilizo Angular como uma
                             das principais ferramentas de desenvolvimento, juntamente com HMTL5, CSS3 e JS. Além e claro
@@ -78,60 +77,168 @@
         <div class="py-5 bg-darking text-light" id="habilidades">
             <div class="container">
                 <div class="row">
-                    <h2 class="text-center my-5">Minhas habilidades</h2>
+                    <h2 class="text-center mt-3 mt-md-5">Minhas habilidades</h2>
+                    <h6 class="text-center mb-3 mb-md-5">Clique em uma das habilidades para ver os detalhes</h6>
                     <div class="col-lg-2 col-6 efect mt-3 ">
-                        <div class="project rounded p-2">
+                        <div class="project rounded py-4" data-bs-toggle="modal" data-bs-target="#html">
                             <div class="d-flex justify-content-center">
                                 <img src="./assets/html.png" alt="" width="80">
                             </div>
-                            <h2 class="fw-normal text-center">HTML5</h2>
                         </div>
-
-
                     </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="html" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content bg-modal">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">HTML5</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Tenho uma experiência de aproximadamente 5 anos com projetos pessoais. Com trabalho a aproximadamente 1 ano.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-success"
+                                        data-bs-dismiss="modal">Show!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col-lg-2 col-6 efect mt-3">
-                        <div class="project rounded p-2">
+                        <div class="project rounded py-4" data-bs-toggle="modal" data-bs-target="#css">
                             <div class="d-flex justify-content-center">
                                 <img src="./assets/css.png" alt="" width="80">
                             </div>
-                            <h2 class="fw-normal text-center">CSS3</h2>
                         </div>
-
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="css" tabindex="-1" aria-labelledby="css" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content bg-modal">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">CSS3</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Juntamente com o HTML5 tenho uma experiência de aproximadamente 5 anos com projetos pessoais e com trabalho
+                                    a aproximadamente 1 ano.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-success"
+                                        data-bs-dismiss="modal">Maneiro!</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-2 col-6 efect mt-3">
-                        <div class="project rounded p-2">
+                        <div class="project rounded py-4" data-bs-toggle="modal" data-bs-target="#bootstrap">
                             <div class="d-flex justify-content-center">
                                 <img src="./assets/bootstrap.png" alt="" width="80">
                             </div>
-                            <h2 class="fw-normal text-center">Bootstrap</h2>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="bootstrap" tabindex="-1" aria-labelledby="bootstrap" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content bg-modal">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Bootstrap 5</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Comecei a me aventurar o Boostrap a aproximadamente 4 anos após fazer alguns cursos. Hoje em dia ele e um grande aliado em desenvolvimento de aplicações web.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-success"
+                                        data-bs-dismiss="modal">Demais!</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-2 col-6 efect mt-3">
-                        <div class="project rounded p-2">
+                        <div class="project rounded py-4" data-bs-toggle="modal" data-bs-target="#js">
                             <div class="d-flex justify-content-center">
                                 <img src="./assets/js.png" alt="" width="80">
                             </div>
-                            <h2 class="fw-normal text-center">Javascript</h2>
                         </div>
-
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="js" tabindex="-1" aria-labelledby="js" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content bg-modal">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">javascript</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Com o javascript minha relação e bem recente. No começo tinha dificuldade em aprender, porém, após começar a trabalhar com a linguagem a pouco mais de 1 ano ja consigo entender e aplicar os conceitos de forma clara.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-success"
+                                        data-bs-dismiss="modal">Parebens!</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-2 col-6 efect mt-3">
-                        <div class="project rounded p-2">
+                        <div class="project rounded py-4" data-bs-toggle="modal" data-bs-target="#ts">
                             <div class="d-flex justify-content-center">
                                 <img src="./assets/ts.png" alt="" width="80">
                             </div>
-                            <h2 class="fw-normal text-center">Typescript</h2>
                         </div>
-
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="ts" tabindex="-1" aria-labelledby="ts" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content bg-modal">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Typescript</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    A relação com typescript também e recente, aproximadamente 6 meses. Comecei a estudar por conta que no trabalho me foi imposto que trabalhasse com Angular no Front-end
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-success"
+                                        data-bs-dismiss="modal">Incrivel!</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-2 col-6 efect mt-3">
-                        <div class="project rounded p-2">
+                        <div class="project rounded py-4" data-bs-toggle="modal" data-bs-target="#angular">
                             <div class="d-flex justify-content-center">
                                 <img src="./assets/angular.png" alt="" width="80">
                             </div>
-                            <h2 class="fw-normal text-center">Angular</h2>
                         </div>
                     </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="angular" tabindex="-1" aria-labelledby="angular" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content bg-modal">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Angular 12</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                   Comecei a trabalhar com Angular a cerca de 8 meses. Ja desenvolvi 3 projetos usando o framework.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-success"
+                                        data-bs-dismiss="modal">Gostei!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -211,8 +318,7 @@
                         </a>
                     </div>
                     <div class="col-lg-2 col-6 efect mt-3 ">
-                        <a href="https://github.com/pigor66" target="_blank"
-                            rel="noopener noreferrer">
+                        <a href="https://github.com/pigor66" target="_blank" rel="noopener noreferrer">
                             <div class="d-flex justify-content-center">
                                 <div class="project rounded w-75">
                                     <div class="d-flex justify-content-center mt-3">
@@ -227,20 +333,21 @@
                         <div class="d-flex justify-content-center">
                             <div class="project rounded w-75">
                                 <a href="https://www.facebook.com/higor.ribeiro.54" target="_blank"
-                                rel="noopener noreferrer">
-                                <div class="d-flex justify-content-center mt-3">
-                                    <img src="./assets/fb.png" alt="" width="40" height="40">
-                                </div>
-                                <h6 class="fw-normal text-center mt-2">Facebook</h6>
-                            </a>
+                                    rel="noopener noreferrer">
+                                    <div class="d-flex justify-content-center mt-3">
+                                        <img src="./assets/fb.png" alt="" width="40" height="40">
+                                    </div>
+                                    <h6 class="fw-normal text-center mt-2">Facebook</h6>
+                                </a>
+                            </div>
                         </div>
-                    </div>
 
                     </div>
                     <div class="col-lg-2 col-6 efect mt-3">
                         <div class="d-flex justify-content-center">
                             <div class="project rounded w-75">
-                                <a href="https://www.instagram.com/pigor.exe/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.instagram.com/pigor.exe/" target="_blank"
+                                    rel="noopener noreferrer">
                                     <div class="d-flex justify-content-center mt-3">
                                         <img src="./assets/insta.png" alt="" width="40" height="40">
                                     </div>
@@ -249,19 +356,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-6 efect mt-3">
+                    <div class="col-lg-2 col-12 efect mt-3">
                         <div class="d-flex justify-content-center">
-
                             <div class="project rounded w-75">
                                 <a href="https://api.whatsapp.com/send?phone=5511985398618&text=Ol%C3%A1%20Higor%2C%20tudo%20bem%3F"
-                                target="_blank" rel="noopener noreferrer">
-                                <div class="d-flex justify-content-center mt-3">
-                                    <img src="./assets/whats.png" alt="" width="40" height="40">
-                                </div>
-                                <h6 class="fw-normal text-center mt-2">WhatsApp</h6>
-                            </a>
+                                    target="_blank" rel="noopener noreferrer">
+                                    <div class="d-flex justify-content-center mt-3">
+                                        <img src="./assets/whats.png" alt="" width="40" height="40">
+                                    </div>
+                                    <h6 class="fw-normal text-center mt-2">WhatsApp</h6>
+                                </a>
+                            </div>
                         </div>
-                    </div>
                     </div>
 
                 </div>
@@ -270,7 +376,7 @@
         </div>
 
 
-        <footer class="bg-darkness pb-2 text-center">
+        <footer class="bg-darkness py-2 text-center">
             Feito por Higor Ribeiro @2021
         </footer>
     </main>
