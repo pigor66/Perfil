@@ -20,17 +20,17 @@ body{
     height: 30em;
 }
 .bg-placeholder{
-    border: 1px solid rgba(255, 0, 212, 0.37);
+    border: 1px solid rgba(255, 0, 212, 0.37) !important;
     background-color: rgba(255, 0, 212, 0.05) !important;
 }
 .bg-placeholder:focus{
-    box-shadow: 0px 0px 10px 0px rgb(237, 0, 245);
+    box-shadow: 0px 0px 10px 0px rgb(237, 0, 245) !important;
     background-color: rgba(255, 0, 212, 0.05) !important;
 }
 
 .btn-outline-send{
-    border: 1px solid rgba(255, 0, 212, 0.781);
-    color: rgba(255, 0, 212, 0.856);
+    border: 1px solid rgba(255, 0, 212, 0.781) !important;
+    color: rgba(255, 0, 212, 0.856) !important; 
 }
 .btn-outline-send:hover{
     background-color: rgba(255, 0, 212, 0.781)!important;
