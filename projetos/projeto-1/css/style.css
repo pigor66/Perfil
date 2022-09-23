@@ -5,7 +5,17 @@ body {
     background-repeat: no-repeat;
     height: 100vh;
 }
-
+.nav-tabs .nav-link.active {
+    border: none !important;
+    box-shadow: 0px 0px 10px 0px rgb(237, 0, 245) !important;
+    background-color: #000 !important;
+    color: rgb(237, 0, 245);
+}
+.nav-tabs .nav-link{
+    border: none !important;
+    background-color: transparent !important;
+    color: rgb(237, 0, 245);
+}
 .opacity {
     background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
@@ -24,12 +34,12 @@ body {
     width: 30em;
     height: 30em;
 }
-
-.card-component-dados {
+.card-component-login {
     box-shadow: 0px 0px 10px 0px rgb(237, 0, 245);
     background-color: rgba(0, 0, 0, 0.8) !important;
     width: 30em;
 }
+
 
 .bg-placeholder {
     border: 1px solid rgba(255, 0, 212, 0.37) !important;
