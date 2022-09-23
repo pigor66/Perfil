@@ -17,7 +17,7 @@
 <body>
     <div class="opacity d-flex justify-content-center align-items-center">
         <div class="card-component p-md-5 p-4 rounded-3">
-            <form name="form">
+            <form name="form" id="form">
                 <div class="mb-3">
                     <label class="form-label text-light">Como posso te chamar?</label>
                     <input type="text" class="form-control bg-placeholder text-light" name="nome" placeholder="João">
@@ -34,7 +34,7 @@
                     <label class="form-label text-light">Pode repetir a senha?</label>
                     <input type="password" class="form-control bg-placeholder text-light" name="confSenha" placeholder="Senha">
                 </div>
-                <div onclick="cadastrar(form.nome, form.email, form.senha, form.confSenha)" class="btn btn-outline-send">Cadastrar</div>
+                <div onclick="cadastrar()" class="btn btn-outline-send">Cadastrar</div>
             </form>
         </div>
     </div>

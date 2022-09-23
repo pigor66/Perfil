@@ -6,6 +6,18 @@ a h6{
     text-decoration: underline;
     color: #ffffff;
 }
+
+.btn-outline-neon{
+    border: 1px solid rgba(255, 0, 212, 0.781) !important;
+    color: rgba(255, 0, 212, 0.856) !important; 
+}
+.btn-outline-neon:hover{
+    background-color: rgba(255, 0, 212, 0.781)!important;
+    border: 1px solid rgba(255, 249, 254, 0.438) !important;
+    color: rgb(247, 204, 255) !important;
+    box-shadow: 0px 0px 10px 0px rgb(237, 0, 245);
+}
+
 .bg-modal{
 background-color: rgba(5, 5, 5, 0.95) !important;
 box-shadow: 0px 0px 5px 1px rgb(255, 255, 255);
@@ -22,19 +34,23 @@ box-shadow: 0px 0px 5px 1px rgb(255, 255, 255);
 .cover-container {
     max-width: 42em;
 }
-.project{
+.border-neon{
     transition: 0.5s;
     box-shadow: 0px 0px 2px 1px rgb(50, 50, 50);
-
+}
+.bg-darkness .border-neon{
+    transition: 0.5s;
+    box-shadow: 0px 0px 2px 1px rgb(50, 50, 50);
+    height: 14em;
 }
 
-.project:hover{
-    background-color: rgb(8, 8, 8);
-    box-shadow: 0px 0px 10px 5px rgb(50, 50, 50);
+.border-neon:hover{
+    box-shadow: 0px 0px 10px 0px rgb(237, 0, 245) !important;
+    background-color: rgba(255, 0, 212, 0.05) !important;
     transition: 0.5s;
 }
 .higor{
-    box-shadow: 0px 0px 10px 5px #000;
+    box-shadow: 0px 0px 10px 0px rgba(237, 0, 245, 0.096) !important;
     transition: 0.5s;
 
 }
@@ -56,6 +72,20 @@ box-shadow: 0px 0px 5px 1px rgb(255, 255, 255);
 
 .featurette-heading {
     letter-spacing: -.05rem;
+}
+
+.btn-outline-success a{
+    text-decoration: none !important;
+    color: #198754 !important;
+}
+.btn-outline-success a:hover{
+    color: #fff !important;
+}
+
+.login{
+    background: url("../assets/login.png");
+    background-size: cover;
+    background-position: center;
 }
 @media (max-width: 767px) {
     .higor{
