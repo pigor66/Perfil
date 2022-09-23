@@ -3,75 +3,97 @@
 
 
 let novoUsuario = [
-    "   higor", "teste@teste", "123"
+    "higor", "teste@teste", "123"
 ]
 // CADASTRO
 function cadastrar() {
-   let nome =  form.nome.value
-   let email =  form.email.value
-   let senha =  form.senha.value
-   let confSenha =  form.confSenha.value
+    let nome = form.nome.value
+    let email = form.email.value
+    let senha = form.senha.value
+    let confSenha = form.confSenha.value
 
 
 
     if (!nome) {
-        alert("Por favor insira seu nome")
+        let header = document.getElementById('alertHeader')
+        let body = document.getElementById('alertBody')
+        let btn = document.getElementById('closeAlert')
+
+        header.textContent = "Está faltando o nome..."
+        body.textContent = "Não da para te cadastrar se nao soubermos seu nome."
+        btn.textContent = "Esqueci, vou colocar!"
+
     } else if (!email) {
-        alert("Por favor insira seu email")
+        let header = document.getElementById('alertHeader')
+        let body = document.getElementById('alertBody')
+        let btn = document.getElementById('closeAlert')
+
+        header.textContent = "Está faltando o Email..."
+        body.textContent = "Tem que preencher todos os campos, inclusive seu Email."
+        btn.textContent = "Etcha, Esqueci"    
     } else if (!senha) {
-        alert("Por favor insira sua senha")
+        let header = document.getElementById('alertHeader')
+        let body = document.getElementById('alertBody')
+        let btn = document.getElementById('closeAlert')
+
+        header.textContent = "Está faltando o senha..."
+        body.textContent = "Para a asegurança das suas informações você deve colocar uma senha"
+        btn.textContent = "Desculpe, irei colocar"  
     } else if (senha != confSenha) {
-        alert("As senhas não são iguais")
-    } else if (nome && email && senha == confSenha) {
-        alert("Você foi cadastrado")
-    }
-    console.log(nome);
-    console.log(email);
-    console.log(senha);
-    console.log(confSenha);
-    console.log(form);
+        let header = document.getElementById('alertHeader')
+        let body = document.getElementById('alertBody')
+        let btn = document.getElementById('closeAlert')
 
-    // if (!postUsuario[0].value) {
-    //     alert("Por favor insira seu nome")
-    // } else if (!postUsuario[1].value) {
-    //     alert("Por favor insira seu email")
-    // } else if (!postUsuario[2].value) {
-    //     alert("Por favor insira sua senha")
-    // } else if (postUsuario[2].value != postUsuario[3].value) {
-    //     alert("As senhas não são iguais")
-    // } else if (postUsuario[0].value && postUsuario[2].value == postUsuario[3].value) {
-    //     usuario = [
-    //         postUsuario[0].value, postUsuario[1].value, postUsuario[2].value, postUsuario[3].value
-    //     ]
-    //     console.log(novoUsuario);
-    //     alert("Você foi cadastrado", postUsuario)
-    // }
-    // console.log(postUsuario[0].value);
-}
+        header.textContent = "Algo esta errado"
+        body.textContent = "Parece que as senhas nao batem"
+        btn.textContent = "Vou refazer!"
+        } else if (nome && email && senha == confSenha) {
 
+            let header = document.getElementById('alertHeader')
+            let body = document.getElementById('alertBody')
+            let btn = document.getElementById('closeAlert')
+    
+            header.textContent = "Maravilha"
+            body.textContent = "Agora você esta cadastrado"
+            btn.textContent = "Show"
 
-function inserir() {
-    const table = document.getElementsByTagName('table');
-    if (!table) {
-        // let novaTabela = document.createElement('table');
-        alert('Criar Tabela');
-    } else {
-        alert('Tabela Existente');
+        let tBody = document.getElementById('body')
 
-    }
+        let usuarioLinha = document.createElement('tr');
+        let nomeColuna = document.createElement('td');
+        let emailColuna = document.createElement('td');
+        let senhaColuna = document.createElement('td');
 
-    // let inserirlinha = (tabela.innerHTML = " <td></td>");
+        nomeColuna.textContent = nome
+        emailColuna.textContent = email
+        senhaColuna.textContent = senha
+
+        usuarioLinha.appendChild(nomeColuna);
+        usuarioLinha.appendChild(emailColuna);
+        usuarioLinha.appendChild(senhaColuna);
+
+        tBody.appendChild(usuarioLinha);
+
+        tBody.nome    }
+    let body = document.getElementById('body');
 
 
+    console.log(body.children);
 
-    console.log(table);
 
+    // console.log(usuarioLinha);
 
 
 }
 
 
 
+
+function pegueiTbody() {
+    let td = document.getElementsByTagName('td');
+
+    console.log(td);
+}
 
 
 
