@@ -31,7 +31,7 @@ function cadastrar() {
         body.textContent = "Para a asegurança das suas informações você deve colocar uma senha"
         btn.textContent = "Desculpe, irei colocar"
 
-    }else if (senha != confSenha) {
+    } else if (senha != confSenha) {
         let header = document.getElementById('alertHeader')
         let body = document.getElementById('alertBody')
         let btn = document.getElementById('closeAlert')
@@ -59,7 +59,7 @@ function cadastrar() {
             localStorage.setItem("nome", nome)
             localStorage.setItem("email", email)
             localStorage.setItem("senha", senha)
-    
+
         })
     }
 };
@@ -73,17 +73,8 @@ function entrar() {
     let senhaLogin = formLogin.senhaLogin.value
 
     if (login == localNome || login == localEmail && senhaLogin == localSenha) {
-    
-        let header = document.getElementById('loginHeader')
-        let body = document.getElementById('loginBody')
-        let btn = document.getElementById('loginClose')
 
-        header.textContent = "Maravilha"
-        body.textContent = "Agora você está logado..."
-        btn.textContent = "Show!"
-
-        window.location.href ="https://dreamdeveloper.netlify.app/projetos/projeto-1/pages/success.html"
- 
+        window.location.href = "https://dreamdeveloper.netlify.app/projetos/projeto-1/pages/success.html"
 
     } else {
         let header = document.getElementById('loginHeader')
@@ -98,27 +89,27 @@ function entrar() {
 }
 
 
-function mostarDados(){
+function mostarDados() {
     let localNome = localStorage.getItem("nome")
     let localEmail = localStorage.getItem("email")
     let localSenha = localStorage.getItem("senha")
 
     let pageInfoNome = document.getElementById('localNome')
     let pageInfoEmail = document.getElementById('localEmail')
-    let pageInfoSenha = document.getElementById('localSenha')  
+    let pageInfoSenha = document.getElementById('localSenha')
 
     let InfoNome = document.getElementById('pageNome')
     let InfoEmail = document.getElementById('pageEmail')
-    let InfoSenha = document.getElementById('pageSenha')  
-    
+    let InfoSenha = document.getElementById('pageSenha')
+
     InfoNome.textContent = 'Nome: '
     InfoEmail.textContent = 'Email: '
     InfoSenha.textContent = 'Senha: '
-   
+
     pageInfoNome.textContent = localNome
     pageInfoEmail.textContent = localEmail
     pageInfoSenha.textContent = localSenha
- console.log(pageInfoNome);
+    console.log(pageInfoNome);
 }
 
 function restart() {

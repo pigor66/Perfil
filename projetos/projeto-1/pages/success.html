@@ -16,61 +16,65 @@
 
 <body>
     <div class="opacity d-flex justify-content-center pt-5">
-
-        <div class="card-component w-50 card-sucess p-4 rounded-3 mt-5">
+        <div class="card-success w-100 h-100 card-sucess p-4 rounded-3 mt-5 mx-4">
             <h2 class="text-center text-light">Você esta logado agora</h2>
             <h6 class="text-center text-light mt-3">Para ver as informações cadastradas basta clicar no botão abaixo
             </h6>
             <div class="mt-4">
-                <div class="d-flex justify-content-between">
-                    <div onclick="mostarDados()" class="btn btn-outline-send">
-                        Mostrar meus dados</div>
-                    <a href="../../../home.html">
-                        <div class="btn btn-outline-green" data-bs-toggle="modal" data-bs-target="#login">
-                            Voltar para os projetos</div>
-                    </a>
-                    <div class="btn btn-outline-red-neon" data-bs-toggle="modal" data-bs-target="#login">
-                        Voltar para a tela de login</div>
-
-                    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="alertLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content bg-modal px-4 py-3">
-                                <div class="modal-header border-bottom-0 d-flex justify-content-center">
-                                    <h5 class="modal-title text-light">Tem certeza que deseja sair?</h5>
-                                </div>
-                                <div class="modal-body border-bottom-0 text-light text-center pt-0 pb-4">
-                                    Seus dados serão apagados e terá que fazer todo o procedimento novamente
-                                </div>
-                                <div class="d-flex justify-content-around">
-                                    <button type="button" class="btn btn-outline-red-neon" data-bs-dismiss="modal"
-                                        id="loginClose">Quero ficar</button>
-                                    <a href="./projeto1.html">
-                                        <button type="button" class="btn btn-outline-send" data-bs-dismiss="modal"
-                                            id="loginClose" onclick="restart()">Quero sair</button>
-                                    </a>
-                                </div>
+                <div class="row">
+                    <div class="col-md-4 col-12">
+                        <div onclick="mostarDados()" class="btn w-100 my-1 btn-outline-send">
+                            Mostrar meus dados</div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <a href="../../../home.html">
+                            <div class="btn w-100 my-1 btn-outline-green" data-bs-toggle="modal"
+                                data-bs-target="#login">
+                                Voltar para os projetos</div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="btn w-100 my-1 btn-outline-red-neon" data-bs-toggle="modal" data-bs-target="#login">
+                            Voltar para a tela de login</div>
+                    </div>
+                </div>
+                <div class="modal fade" id="login" tabindex="-1" aria-labelledby="alertLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content bg-modal px-4 py-3">
+                            <div class="modal-header border-bottom-0 d-flex justify-content-center">
+                                <h5 class="modal-title text-light">Tem certeza que deseja sair?</h5>
+                            </div>
+                            <div class="modal-body border-bottom-0 text-light text-center pt-0 pb-4">
+                                Seus dados serão apagados e terá que fazer todo o procedimento novamente
+                            </div>
+                            <div class="d-flex justify-content-around">
+                                <button type="button" class="btn btn-outline-red-neon" data-bs-dismiss="modal"
+                                    id="loginClose">Quero ficar</button>
+                                <a href="./projeto1.html">
+                                    <button type="button" class="btn btn-outline-send" data-bs-dismiss="modal"
+                                        id="loginClose" onclick="restart()">Quero sair</button>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <table class=" mt-4">
-                    <thead>
-                        <tr>
-                            <th id="pageNome" class="pe-4 text-light"></th>
-                            <th id="pageEmail" class="pe-4 text-light"></th>
-                            <th id="pageSenha" class="pe-4 text-light text-center"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td id="localNome" class="pe-4 text-light "></td>
-                            <td id="localEmail" class="pe-4 text-light "></td>
-                            <td id="localSenha" class="pe-4 text-light text-center"></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="row mt-md-5 mt-3">
+                    <div class="col-md-4 col-12 d-flex">
+                        <p id="pageNome" class="me-2 fw-bold text-light"></p>
+                        <p id="localNome" class="text-light"></p>
+                    </div>
+                    <div class="col-md-4 col-12 d-flex">
+                        <p id="pageEmail" class="me-2 fw-bold text-light"></p>
+                        <p id="localEmail" class="text-light"></p>
+                    </div>
+                    <div class="col-md-4 col-12 d-flex">
+                        <p id="pageSenha" class="me-2 fw-bold text-light text-center"></p>
+                        <p id="localSenha" class="text-light"></p>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
