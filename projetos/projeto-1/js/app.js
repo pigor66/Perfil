@@ -102,9 +102,9 @@ function mostarDados() {
     let InfoEmail = document.getElementById('pageEmail')
     let InfoSenha = document.getElementById('pageSenha')
 
-    InfoNome.textContent = 'Nome: '
-    InfoEmail.textContent = 'Email: '
-    InfoSenha.textContent = 'Senha: '
+    InfoNome.textContent = 'Nome'
+    InfoEmail.textContent = 'Email'
+    InfoSenha.textContent = 'Senha'
 
     pageInfoNome.textContent = localNome
     pageInfoEmail.textContent = localEmail
