@@ -39,7 +39,8 @@ function cadastrar() {
         header.textContent = "Está faltando o senha..."
         body.textContent = "Para a asegurança das suas informações você deve colocar uma senha"
         btn.textContent = "Desculpe, irei colocar"
-    } else if (senha != confSenha) {
+    }
+    else if (senha != confSenha) {
         let header = document.getElementById('alertHeader')
         let body = document.getElementById('alertBody')
         let btn = document.getElementById('closeAlert')
@@ -56,21 +57,33 @@ function cadastrar() {
         header.textContent = "Maravilha"
         body.textContent = "Agora você esta cadastrado"
         btn.textContent = "Show"
-        
-
-        localStorage.setItem("nome", nome) 
-        localStorage.setItem("email", email) 
-        localStorage.setItem("senha",senha) 
-
-      
 
 
+        localStorage.setItem("nome", nome)
+        localStorage.setItem("email", email)
+        localStorage.setItem("senha", senha)
+    }
+};
 
+function entrar() {
+    let localNome = localStorage.getItem("nome")
+    let localEmail = localStorage.getItem("email")
+    let localSenha = localStorage.getItem("senha")
 
+    let login = formLogin.nomeLogin.value
+    let senhaLogin = formLogin.senhaLogin.value
+    if (login == localNome || login == localEmail && senhaLogin == localSenha){
+        alert("voce esta logado agora...")
+    }else{
+        alert("Combinação de login invalida...")
     }
 
 
-
+        console.log(localNome);
+    console.log(localEmail);
+    console.log(localSenha);
+    console.log(login);
+    console.log(senhaLogin);
 }
 
 
