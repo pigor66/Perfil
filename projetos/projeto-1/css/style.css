@@ -33,11 +33,10 @@ body {
     background-color: rgba(0, 0, 0, 0.8) !important;
  
 }
-.card-login {
-    box-shadow: 0px 0px 10px 0px rgb(237, 0, 245);
-    background-color: rgba(0, 0, 0, 0.8) !important;
-}
 
+.card-sucess{
+    height: 20em !important;
+}
 
 
 .bg-placeholder {
@@ -50,6 +49,17 @@ body {
     background-color: rgba(255, 0, 212, 0.05) !important;
 }
 
+.btn-outline-red-neon{
+    border: 1px solid rgba(255, 0, 0, 0.877) !important;
+    color: rgba(255, 0, 0, 0.781)  !important; 
+}
+.btn-outline-red-neon:hover{
+    background-color: rgba(255, 0, 55, 0.884) !important;
+    border: 1px solid rgba(248, 183, 183, 0.342) !important;
+    color: rgb(247, 204, 255) !important;
+    box-shadow: 0px 0px 10px 0px rgba(255, 0, 0, 0.781) ;
+}
+
 .btn-outline-send {
     border: 1px solid rgba(255, 0, 212, 0.781) !important;
     color: rgba(255, 0, 212, 0.856) !important;
@@ -60,6 +70,17 @@ body {
     border: 1px solid rgba(255, 249, 254, 0.438) !important;
     color: rgb(247, 204, 255) !important;
     box-shadow: 0px 0px 10px 0px rgb(237, 0, 245);
+}
+.btn-outline-green {
+    border: 1px solid rgba(43, 255, 0, 0.781) !important;
+    color: rgba(43, 255, 0, 0.781)  !important;
+}
+
+.btn-outline-green:hover {
+    background-color: rgba(43, 255, 0, 0.781)  !important;
+    border: 1px solid rgba(255, 249, 254, 0.438) !important;
+    color: rgb(247, 204, 255) !important;
+    box-shadow: 0px 0px 10px 0px rgba(43, 255, 0, 0.781) ;
 }
 
 @media (max-width: 768px) {
