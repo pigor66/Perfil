@@ -89,7 +89,7 @@ body {
 @media (max-width: 768px) {
     .opacity {
         height: 100vh;
-       padding-top: 30% !important;
+       padding-top: 25% !important;
     }
     .card-success{
         height: 32em !important;
