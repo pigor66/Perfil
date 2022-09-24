@@ -88,8 +88,8 @@ function entrar() {
         let body = document.getElementById('loginBody')
         let btn = document.getElementById('loginClose')
 
-        header.textContent = "Ops..."
-        body.textContent = "Confira as informações, algo pode estar errado"
+        header.textContent = "Algo deu errado..."
+        body.textContent = "Faça seu cadastro ou confira suas seu login e senha"
         btn.textContent = "Tentar outra vez"
 
     }
