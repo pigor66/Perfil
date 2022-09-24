@@ -77,13 +77,6 @@ function entrar() {
     }else{
         alert("Combinação de login invalida...")
     }
-
-
-        console.log(localNome);
-    console.log(localEmail);
-    console.log(localSenha);
-    console.log(login);
-    console.log(senhaLogin);
 }
 
 
