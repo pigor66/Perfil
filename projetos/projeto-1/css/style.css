@@ -64,6 +64,8 @@ body {
 
 @media (max-width: 768px) {
     .opacity {
+        height: 100vh;
+
        padding-top: 40% !important;
     }
 }
