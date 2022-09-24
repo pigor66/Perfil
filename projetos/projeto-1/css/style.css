@@ -64,9 +64,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    .card-component {
-
-        width: 20em !important;
-        height: 27em !important;
+    .opacity {
+       padding-top: 40% !important;
     }
 }
