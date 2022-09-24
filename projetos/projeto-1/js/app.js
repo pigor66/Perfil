@@ -73,9 +73,25 @@ function entrar() {
     let login = formLogin.nomeLogin.value
     let senhaLogin = formLogin.senhaLogin.value
     if (login == localNome || login == localEmail && senhaLogin == localSenha){
-        alert("voce esta logado agora...")
+       
+        let header = document.getElementById('loginHeader')
+        let body = document.getElementById('loginBody')
+        let btn = document.getElementById('loginClose')
+
+        header.textContent = "Maravilha"
+        body.textContent = "Agora você está logado..."
+        btn.textContent = "Show!"
+
     }else{
-        alert("Combinação de login invalida...")
+     
+        let header = document.getElementById('loginHeader')
+        let body = document.getElementById('loginBody')
+        let btn = document.getElementById('loginClose')
+
+        header.textContent = "Ops..."
+        body.textContent = "Confira as informações, algo pode estar errado"
+        btn.textContent = "Tentar outra vez"
+
     }
 }
 
